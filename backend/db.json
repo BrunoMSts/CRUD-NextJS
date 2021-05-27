@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "name": "TEse 3",
+      "price": 12312,
+      "id": 3
+    },
+    {
+      "name": "aaa",
+      "price": 12,
+      "id": 4
+    }
+  ]
+}
