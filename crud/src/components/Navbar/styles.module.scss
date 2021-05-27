@@ -1,0 +1,22 @@
+.navbarContainer {
+  height: 100vh;
+  width: 12rem;
+  position: absolute;
+  margin-top: 4rem;
+  background: #3F51B5;
+}
+
+.options {
+  a {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    margin: 1rem 0 0 1rem;
+    text-decoration: none;
+
+    strong {
+      margin-left: 0.5rem
+    }
+
+  }
+}

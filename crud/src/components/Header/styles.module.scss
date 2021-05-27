@@ -1,0 +1,25 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+
+  
+  padding: 1rem;
+  background: #e2e2e2;
+  
+  img {
+    width: 170px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    text-decoration: none;
+
+    strong {
+      margin-left: 0.25rem;
+    }
+
+  }
+}
