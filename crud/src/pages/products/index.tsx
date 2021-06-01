@@ -2,12 +2,15 @@ import { GetStaticProps } from 'next'
 import { api } from '../../services/api'
 import styles from './styles.module.scss'
 
+
+import { FiEdit, FiXCircle } from 'react-icons/fi';
+
 import Link from 'next/link';
 
 type Product = {
   id: string;
   name: string;
-  price: string;
+  price: number;
 }
 
 type ProductProps = {
@@ -26,17 +29,27 @@ export default function Products({ products }: ProductProps) {
       </div>
       {products.map(product => {
         return (
-          <div className={styles.row}>
-            <span>{product.id}</span>
-            <h1>{product.name}</h1>
-            <span>{product.price}</span>
+          <div key={product.id} className={styles.rowContainer}>
+            <div className={styles.row}>
+              <span>{product.id}</span>
+              <h1>{product.name}</h1>
+              <span>{product.price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</span>
+            </div>
+            <div className={styles.options}>
+              <Link href={`/products/edit/${product.id}`}>
+                <button className={styles.edit}>
+                  <FiEdit size={20}/>
+                </button>
+              </Link>
+              <button className={styles.delete}>
+                <FiXCircle size={20}/>
+              </button>
+            </div>
           </div>
         )
       })}
       <Link href="/products/create">
-        <a>
           <button className={styles.button}>Novo produto</button>
-        </a>
       </Link>
     </div>
   )
