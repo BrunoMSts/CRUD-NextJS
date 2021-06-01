@@ -2,13 +2,33 @@
   "products": [
     {
       "name": "TEse 3",
-      "price": 12312,
+      "price": 12345,
       "id": 3
     },
     {
-      "name": "aaa",
-      "price": 12,
+      "name": "oioi12312",
+      "price": 32451,
       "id": 4
+    },
+    {
+      "name": "Varinhawww",
+      "price": 123,
+      "id": 5
+    },
+    {
+      "name": "Varinha 2",
+      "price": 3728,
+      "id": 6
+    },
+    {
+      "name": "Notebook",
+      "price": 5235,
+      "id": 7
+    },
+    {
+      "name": "asdasda",
+      "price": 123,
+      "id": 8
     }
   ]
 }
