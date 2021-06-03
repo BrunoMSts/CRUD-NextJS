@@ -12,6 +12,7 @@ type Product = {
 type ProductContextData = {
   createProduct: (name, price) => void;
   updateProduct: (id, name, price) => void;
+  deleteProduct: (id) => void;
 }
 
 type ProductContextProviderProps = {
@@ -40,10 +41,15 @@ export function ProductContextProvider({ children }: ProductContextProviderProps
     router.push('/products')
   }
 
+  async function deleteProduct(id) {
+    await api.delete(`/products/${id}`)
+  }
+
   return (
     <ProductContext.Provider value={{
       createProduct,
       updateProduct,
+      deleteProduct,
     }}>
       {children}
     </ProductContext.Provider>
