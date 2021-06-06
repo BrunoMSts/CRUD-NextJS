@@ -1,1 +1,6 @@
-## Projeto - CRUD com base no projeto de angular da COD3R
+## I developed this project inspired by the angular course from COD3R.
+
+### Techs
+- Typescript
+- React / NextJS
+- SCSS
