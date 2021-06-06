@@ -26,7 +26,7 @@ export default function Create() {
           <label>Price</label>
         </div>
         <button type="button" onClick={() => createProduct(name, price)}>
-          Cadastrar
+          Register
         </button>
       </form>
     </div>

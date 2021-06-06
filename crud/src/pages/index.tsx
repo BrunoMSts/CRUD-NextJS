@@ -8,8 +8,8 @@ export default function Home() {
         <Head>
           <title>CRUD | Home</title>
         </Head>
-        <h1>Bem vindo!</h1>
-        <p>Implementação básica utilizando o contexto CRUD!</p>
+        <h1>Welcome!</h1>
+        <p>Basic implementation using CRUD context!!</p>
       </div>
   )
 }

@@ -64,7 +64,7 @@ export default function Products({ products }: ProductProps) {
         )
       })}
       <Link href="/products/create">
-          <button className={styles.button}>Novo produto</button>
+          <button className={styles.button}>New product</button>
       </Link>
     </div>
   )
