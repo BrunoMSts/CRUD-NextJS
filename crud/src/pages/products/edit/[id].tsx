@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import { useProduct } from "../../../contexts/ProductContext"
 import { api } from "../../../services/api"
 
+import Head from 'next/head'
+
 import styles from './styles.module.scss'
 
 type Product = {
@@ -29,6 +31,9 @@ export default function Edit({ product }: ProductProps) {
   
   return (
     <div className={styles.formContainer}>
+      <Head>
+          <title>CRUD | Edit</title>
+      </Head>
       <form action="">
         <div className={styles.labelFloat}>
           <input type="text" placeholder=" " value={name}  onChange={e => setName(e.target.value)}/>

@@ -1,7 +1,9 @@
 import styles from './styles.module.scss'
 
 import { useProduct } from '../../../contexts/ProductContext'
-import { useState } from 'react'
+import { useState } from 'react';
+
+import Head from 'next/head'
 
 export default function Create() {
 
@@ -11,6 +13,9 @@ export default function Create() {
 
   return (
     <div className={styles.formContainer}>
+      <Head>
+          <title>CRUD | New product</title>
+      </Head>
       <form action="">
         <div className={styles.labelFloat}>
           <input type="text" placeholder=" " onChange={e => setName(e.target.value)}/>

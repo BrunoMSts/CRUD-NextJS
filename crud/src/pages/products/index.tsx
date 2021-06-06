@@ -6,7 +6,9 @@ import { FiEdit, FiXCircle } from 'react-icons/fi';
 
 import Link from 'next/link';
 import { useProduct } from '../../contexts/ProductContext';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+
+import Head from 'next/head';
 
 type Product = {
   id: string;
@@ -31,6 +33,9 @@ export default function Products({ products }: ProductProps) {
 
   return (
     <div className={styles.container}>
+      <Head>
+          <title>CRUD | Products</title>
+      </Head>
       <h1>Produtos</h1>
       <div className={styles.columns}>
         <span>id</span>
