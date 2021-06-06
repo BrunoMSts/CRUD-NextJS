@@ -36,7 +36,7 @@ export default function Products({ products }: ProductProps) {
       <Head>
           <title>CRUD | Products</title>
       </Head>
-      <h1>Produtos</h1>
+      <h1>Products</h1>
       <div className={styles.columns}>
         <span>id</span>
         <span>name</span>
