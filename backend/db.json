@@ -1,24 +1,3 @@
 {
-  "products": [
-    {
-      "name": "asdas",
-      "price": 12312,
-      "id": 1
-    },
-    {
-      "name": "qweqwewq",
-      "price": 12412,
-      "id": 2
-    },
-    {
-      "name": "qweqwe",
-      "price": 412412,
-      "id": 3
-    },
-    {
-      "name": "ewqqwe",
-      "price": 12321,
-      "id": 4
-    }
-  ]
+  "products": []
 }
